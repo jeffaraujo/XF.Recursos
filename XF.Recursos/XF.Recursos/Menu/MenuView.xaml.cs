@@ -26,7 +26,32 @@ namespace XF.Recursos.Menu
                 Icone = "Home.png",
                 TargetType = typeof(HomeView)
             });
-            
+            menuItems.Add(new OpcoesMenu
+            {
+                Descricao = "Editor",
+                TargetType = typeof(Controles.EditorView)
+            });
+            menuItems.Add(new OpcoesMenu
+            {
+                Descricao = "Controle de Data",
+                TargetType = typeof(Controles.PickerView)
+            });
+            menuItems.Add(new OpcoesMenu
+            {
+                Descricao = "List Picker",
+                TargetType = typeof(Controles.ListPickerView)
+            });
+            menuItems.Add(new OpcoesMenu
+            {
+                Descricao = "Stepper",
+                TargetType = typeof(Controles.StepperView)
+            });
+            menuItems.Add(new OpcoesMenu
+            {
+                Descricao = "Progresso",
+                TargetType = typeof(Controles.ProgressoView)
+            });
+
             lstMenu.ItemsSource = menuItems;
         }
 
